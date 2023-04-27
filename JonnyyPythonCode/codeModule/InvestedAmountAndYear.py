@@ -3,4 +3,6 @@ years = int(input("Enter the number of year: "))
 rate = 0.05
 returnOfInvestment = amount * rate
 for years in range(1, years + 1):
-    print(years)
+    futureInterest = amount * returnOfInvestment
+    amount = futureInterest
+    print(f"Year {years} return investment is {futureInterest}")
